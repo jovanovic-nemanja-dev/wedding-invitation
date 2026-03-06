@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Радица и Немања — Венчање</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <p class="hero-tagline">Позвани сте</p>
+      <h1 class="hero-title">Радица и Немања</h1>
+      <p class="hero-date">6. јун 2026.</p>
+      <p class="hero-message">Волели бисмо да прославимо са вама.</p>
+    </section>
+
+    <section class="countdown-section">
+      <h2 class="countdown-heading">До венчања</h2>
+      <div class="countdown" aria-live="polite">
+        <div class="countdown-unit">
+          <span class="countdown-value" id="days">—</span>
+          <span class="countdown-label">дани</span>
+        </div>
+        <div class="countdown-unit">
+          <span class="countdown-value" id="hours">—</span>
+          <span class="countdown-label">сати</span>
+        </div>
+        <div class="countdown-unit">
+          <span class="countdown-value" id="minutes">—</span>
+          <span class="countdown-label">минути</span>
+        </div>
+        <div class="countdown-unit">
+          <span class="countdown-value" id="seconds">—</span>
+          <span class="countdown-label">секунде</span>
+        </div>
+      </div>
+      <p class="countdown-done" id="countdown-done" hidden>Не можемо да дочекамо да вас видимо!</p>
+    </section>
+
+    <section class="details">
+      <h2>Детаљи о догађају</h2>
+      <p>Официрски дом — грађанско венчање 15:00h</p>
+      <p>Винарија Малћа 16:30h</p>
+    </section>
+
+    <section class="photos">
+      <h2>Поделите своје фотографије</h2>
+      <p>Имате фотографије са венчања? Додајте их овде и прикупићемо их на једном месту.</p>
+      <a href="https://forms.gle/srkccbyHqPpkqupy8" target="_blank" rel="noopener noreferrer" class="photos-button">Додајте фотографије</a>
+    </section>
+  </main>
+
+  <script src="countdown.js"></script>
+</body>
+</html>

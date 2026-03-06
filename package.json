@@ -1,0 +1,8 @@
+{
+  "name": "wedding-invitation",
+  "private": true,
+  "scripts": {
+    "start": "npx serve . -p 3000",
+    "stop": "npx kill-port 3000"
+  }
+}

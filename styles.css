@@ -1,0 +1,189 @@
+/* Wedding page – text color #755c4a, light background */
+
+@font-face {
+  font-family: "Nicoletta";
+  src: url("fonts/Nicoletta_script.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --text: #755c4a;
+  --text-muted: #8a7362;
+  --bg: #faf8f5;
+  --bg-section: #f5f2ed;
+  --border: #e8e2da;
+  --button-bg: #755c4a;
+  --button-text: #faf8f5;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Nicoletta", Georgia, "Times New Roman", serif;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--text);
+  background-color: var(--bg);
+}
+
+main {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+section:last-child {
+  margin-bottom: 0;
+}
+
+h1, h2 {
+  font-weight: 400;
+  color: var(--text);
+  margin: 0 0 0.75em;
+}
+
+h1 {
+  font-size: 2rem;
+  letter-spacing: 0.02em;
+}
+
+h2 {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+p {
+  margin: 0 0 0.5em;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.hero-tagline {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.hero-title {
+  font-size: 2.25rem;
+  margin-bottom: 0.25em;
+}
+
+.hero-date {
+  font-size: 1.125rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.hero-message {
+  font-style: italic;
+  color: var(--text);
+}
+
+/* Countdown */
+.countdown-section {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: var(--bg-section);
+  border-radius: 8px;
+}
+
+
+.countdown {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem 2rem;
+}
+
+.countdown-unit {
+  display: flex;
+  flex-direction: column;
+  min-width: 4rem;
+}
+
+.countdown-value {
+  font-size: 2rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--text);
+}
+
+.countdown-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  margin-top: 0.25rem;
+}
+
+.countdown-done {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+/* Details */
+.details p {
+  color: var(--text-muted);
+}
+
+/* Photos */
+.photos {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: var(--bg-section);
+  border-radius: 8px;
+}
+
+.photos p {
+  margin-bottom: 1.25rem;
+  color: var(--text);
+}
+
+.photos-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--button-text);
+  background-color: var(--button-bg);
+  text-decoration: none;
+  border-radius: 6px;
+  transition: opacity 0.2s;
+}
+
+.photos-button:hover {
+  opacity: 0.9;
+}
+
+.photos-button:focus {
+  outline: 2px solid var(--text);
+  outline-offset: 2px;
+}
+
+@media (min-width: 480px) {
+  .countdown-value {
+    font-size: 2.5rem;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+}
