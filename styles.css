@@ -57,29 +57,6 @@ a:visited {
   color: var(--text);
 }
 
-/* Edge florals – multiple on each side, pointing inward; px for reliable sizing everywhere */
-.edge-floral {
-  position: absolute !important;
-  width: 96px !important;
-  max-width: 96px !important;
-  height: auto !important;
-  max-height: 160px !important;
-  object-fit: contain;
-  object-position: center;
-  pointer-events: none;
-  z-index: 0;
-  transform-origin: center center;
-  display: block !important;
-}
-
-/* Left edge – 2 florals */
-.edge-floral--pos-1 { left: -8px !important; right: auto !important; top: 12% !important; bottom: auto !important; transform: rotate(87deg) !important; }
-.edge-floral--pos-2 { left: -8px !important; right: auto !important; top: 44% !important; bottom: auto !important; transform: rotate(93deg) !important; }
-
-/* Right edge – 2 florals */
-.edge-floral--pos-4 { right: -8px !important; left: auto !important; top: 18% !important; bottom: auto !important; transform: rotate(-91deg) !important; }
-.edge-floral--pos-5 { right: -8px !important; left: auto !important; top: 52% !important; bottom: auto !important; transform: rotate(-86deg) !important; }
-
 section {
   margin-bottom: 3rem;
 }
@@ -131,9 +108,9 @@ p {
 }
 
 .hero-title {
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin-bottom: 0.25em;
-  font-style: normal;
+  font-style: italic;
 }
 
 .hero-date {
@@ -289,6 +266,6 @@ p {
   }
 
   .hero-title {
-    font-size: 3.25rem;
+    font-size: 4rem;
   }
 }
