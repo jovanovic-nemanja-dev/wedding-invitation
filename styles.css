@@ -108,6 +108,7 @@ p {
 }
 
 .hero-title {
+  font-family: "Nicoletta", Georgia, "Times New Roman", serif;
   font-size: 3.5rem;
   margin-bottom: 0.25em;
   font-style: italic;
