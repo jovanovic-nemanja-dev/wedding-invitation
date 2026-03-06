@@ -47,26 +47,38 @@ main {
   position: relative;
   z-index: 1;
   padding: 2rem 1.25rem 3rem;
+  isolation: isolate;
 }
 
-/* Edge florals – multiple on each side, pointing inward */
+/* Links: match text color everywhere (critical on GitHub Pages) */
+a,
+a:link,
+a:visited {
+  color: var(--text);
+}
+
+/* Edge florals – multiple on each side, pointing inward; px for reliable sizing everywhere */
 .edge-floral {
-  position: absolute;
-  width: 6rem;
-  height: auto;
-  max-height: 14rem;
+  position: absolute !important;
+  width: 96px !important;
+  max-width: 96px !important;
+  height: auto !important;
+  max-height: 160px !important;
   object-fit: contain;
   object-position: center;
   pointer-events: none;
   z-index: 0;
   transform-origin: center center;
+  display: block !important;
 }
 
-/* Random-looking positions around the content, all in margin (not behind main) */
-.edge-floral--pos-1 { left: -0.5rem;  top: 12%;  transform: rotate(87deg); }
-.edge-floral--pos-2 { left: -0.5rem;  top: 44%;  transform: rotate(93deg); }
-.edge-floral--pos-4 { right: -0.5rem; top: 18%;  transform: rotate(-91deg); }
-.edge-floral--pos-5 { right: -0.5rem; top: 52%;  transform: rotate(-86deg); }
+/* Left edge – 2 florals */
+.edge-floral--pos-1 { left: -8px !important; right: auto !important; top: 12% !important; bottom: auto !important; transform: rotate(87deg) !important; }
+.edge-floral--pos-2 { left: -8px !important; right: auto !important; top: 44% !important; bottom: auto !important; transform: rotate(93deg) !important; }
+
+/* Right edge – 2 florals */
+.edge-floral--pos-4 { right: -8px !important; left: auto !important; top: 18% !important; bottom: auto !important; transform: rotate(-91deg) !important; }
+.edge-floral--pos-5 { right: -8px !important; left: auto !important; top: 52% !important; bottom: auto !important; transform: rotate(-86deg) !important; }
 
 section {
   margin-bottom: 3rem;
@@ -133,12 +145,16 @@ p {
 .decoration-divider {
   display: block;
   margin: 1.5rem auto 0;
+  margin-left: auto !important;
+  margin-right: auto !important;
   max-width: 100%;
   height: auto;
 }
 
 .decoration-divider--bottom {
   margin: 2rem auto 0;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 /* Countdown */
@@ -200,7 +216,7 @@ p {
 
 .details-link {
   display: block;
-  color: var(--text);
+  color: var(--text) !important;
   text-decoration: none;
 }
 
@@ -225,12 +241,20 @@ p {
   outline-offset: 2px;
 }
 
-/* Photos */
+/* Photos – center content and keep above edge florals */
 .photos {
+  position: relative;
+  z-index: 2;
   text-align: center;
   padding: 2rem 1rem;
   background-color: var(--bg-section);
   border-radius: 8px;
+}
+
+.photos .photos-button {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .photos p {
@@ -243,7 +267,7 @@ p {
   padding: 0.75rem 1.5rem;
   font-family: inherit;
   font-size: 1.25rem;
-  color: var(--button-text);
+  color: #faf8f5 !important;
   background-color: var(--button-bg);
   text-decoration: none;
   border-radius: 6px;
