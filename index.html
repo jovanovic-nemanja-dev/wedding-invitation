@@ -7,12 +7,19 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main>
+  <div class="page-wrapper">
+    <img src="images/floral.svg" alt="" class="edge-floral edge-floral--pos-1">
+    <img src="images/floral.svg" alt="" class="edge-floral edge-floral--pos-2">
+    <img src="images/floral.svg" alt="" class="edge-floral edge-floral--pos-4">
+    <img src="images/floral.svg" alt="" class="edge-floral edge-floral--pos-5">
+    <main>
     <section class="hero">
-      <p class="hero-tagline">Позвани сте</p>
+      <img src="images/hero-photo.jpg" alt="" class="hero-photo">
+      <p class="hero-tagline">Позивамо вас да поделите 
+        овај дан са нама</p>
       <h1 class="hero-title">Радица и Немања</h1>
       <p class="hero-date">6. јун 2026.</p>
-      <p class="hero-message">Волели бисмо да прославимо са вама.</p>
+      <img src="images/divider-floral-1.svg" alt="" class="decoration-divider" width="200" height="104">
     </section>
 
     <section class="countdown-section">
@@ -40,16 +47,28 @@
 
     <section class="details">
       <h2>Детаљи о догађају</h2>
-      <p>Официрски дом — грађанско венчање 15:00h</p>
-      <p>Винарија Малћа 16:30h</p>
+      <div class="details-venue">
+        <a href="https://maps.app.goo.gl/n2VPYXD97eWLkqyQA" target="_blank" rel="noopener noreferrer" class="details-link" aria-label="Отвори Официрски дом на мапи">
+          <span class="details-venue-name">Официрски дом - грађанско венчање 15:00h</span>
+          <svg class="details-link-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </a>
+      </div>
+      <div class="details-venue">
+        <a href="https://maps.app.goo.gl/1wR74uUwZ5VAQ94LA" target="_blank" rel="noopener noreferrer" class="details-link" aria-label="Отвори Винарија Малча на мапи">
+          <span class="details-venue-name">Винарија Малча 16:30h</span>
+          <svg class="details-link-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </a>
+      </div>
     </section>
 
     <section class="photos">
       <h2>Поделите своје фотографије</h2>
       <p>Имате фотографије са венчања? Додајте их овде и прикупићемо их на једном месту.</p>
       <a href="https://forms.gle/srkccbyHqPpkqupy8" target="_blank" rel="noopener noreferrer" class="photos-button">Додајте фотографије</a>
+      <img src="images/divider-floral-2.svg" alt="" class="decoration-divider decoration-divider--bottom" width="200" height="104">
     </section>
-  </main>
+    </main>
+  </div>
 
   <script src="countdown.js"></script>
 </body>
